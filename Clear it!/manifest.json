@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Clean it!",
+    "version": "1.0",
+    "description": "This extension allows you to completely wipe your browsing data with a single click!",
+    "icons": {
+        "128": "icon/trashbin128.png",
+        "48": "icon/trashbin48.png",
+        "16": "icon/trashbin16.png"
+ 
+    },
+    "browser_action": {
+        "default_icon": "icon/trashbin16.png",
+        "default_popup": "popup.html",
+        "default_title": "Show clearing options!"
+        
+    },
+
+    "permissions": [
+        "browsingData",
+        "tabs",
+        "contextMenus"
+      ],
+      
+    "background":{
+        "scripts": ["js/background.js"],
+        "persistent": false
+    }
+
+}

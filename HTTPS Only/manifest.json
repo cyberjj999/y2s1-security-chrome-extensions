@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+
+  "name": "HTTPS Only",
+  "description": "This extension ensure safe browsing by using HTTPS protocol on all websites!",
+  "version": "1.0",
+  "icons": {
+    "128": "icon/HTTPS128.png",
+    "48": "icon/HTTPS48.png",
+    "16": "icon/HTTPS16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon/HTTPS16.png",
+    "default_popup": "popup.html"
+  },
+  
+  "background": {
+    "scripts": ["js/eventPage.js","js/jquery-3.4.1.min.js"],
+    "persistent": false
+  }, 
+  
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["js/jquery-3.4.1.min.js","js/contentScript.js"]
+    }
+  ],
+  "permissions" : [
+    "tabs",
+    "notifications",
+    "webNavigation",
+    "http://*/",
+    "https://*/*",
+    "storage"
+
+
+    ]
+
+}

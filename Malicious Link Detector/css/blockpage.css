@@ -1,0 +1,119 @@
+/* button{
+    display:inline-block;
+} */
+#proceed {
+    display:none;
+    /* background-color: #4CAF50; */
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.8;
+  }
+
+  #showOptions {
+      display:block;
+      font-size: 1rem;
+      text-decoration: underline;
+      cursor: pointer;
+
+  }
+
+* {
+    text-align: center;
+}
+h2{
+    font-family: Kievit;
+    text-align: center;
+    /* overflow: auto; */
+    word-break: break-all;
+
+
+} 
+#blockpageDiv{
+      margin:auto;
+      /* width:100%; */
+      max-width: 70%;
+
+}
+
+/* #myMLCheckbox{
+  height:20px;
+  width:30px;
+} */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(56, 238, 80);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(85, 243, 64);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+  
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+  #whitelistText{
+      display:none;
+      font-family: Kievit;
+      font-size:150%;
+  }
+

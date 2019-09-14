@@ -1,0 +1,67 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Set a style for the submit/login button */
+
+.btn , .cancel{
+    display:inline-block;
+}
+.form-container .btn {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  #header{
+      text-align:center;
+      text-decoration: underline;
+      font-weight:bold;
+  }
+
+  body{
+      background-color:pink;
+  }
+
+  img{
+      padding:37px;
+  }
+
+  #showConfirm{
+    text-align: center;
+  }
+
+  #dialog{
+    display:none;
+  }
+
+  *{
+    text-align: center;
+  }
+
+  .green{
+    background-color:#4CAF50!important;
+  }
+  .red{
+    background-color:red!important;
+  }
+
+  .ui-dialog, .ui-widget-content, .ui-draggable, .ui-resizable {background:#dba97b !important}
+
+  #userInput {
+    width:195px;
+  }

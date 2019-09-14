@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "Do not disturb list"
+        </title>
+        <script src = "js/jquery-3.4.1.min.js"></script>    
+        <script src="js/options.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+        <script src = 'js/jquery-ui.min.js'></script>
+        <style>
+            /* [COSMETICS - DOES NOT MATTER] */
+            /* html, body {
+              font-family: arial;
+            }
+            table {
+              border-collapse: collapse;
+            }
+            table tr td {
+              border: 1px solid #000;
+              padding: 10px;
+            } */
+            * {
+                text-align:center;
+                margin: auto;
+
+            }
+            table {
+              border-collapse: collapse;
+            }
+
+            td,th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            }
+
+            tr:nth-child(even){background-color: #f2f2f2;}
+
+            tr:hover {background-color: #ddd;}
+
+            th{
+            width:120px;
+            background-color: #4CAF50;
+            color: white;
+            }
+            table{
+                
+                width:60%;
+            }
+
+            img{
+              width:5%;
+              height:5%;
+              /* background-blend-mode: normal; */
+            }
+           
+          </style>
+    </head>
+
+    <body>
+       <h1>View and modify your "Do not disturb" list right here!</h1>
+       <br><br>
+       <table>
+       <th id='tableHead'>Do not disturb list</th>
+       <div id='dialog' title="Clean It!">Are you sure?</div> 
+       </table>
+       <div id='container'></div>
+       <br>
+       <div id="deleteArea">
+         <img src="trashbin.png"/><br>
+        Drag here to delete.
+        </div>
+        <style>
+        #dialog{
+          display:none;
+        }
+        .green{
+          background-color:#4CAF50!important;
+        }
+        .red{
+          background-color:red!important;
+        }
+
+        .ui-dialog, .ui-widget-content, .ui-draggable, .ui-resizable {background:#dba97b !important}
+
+        </style>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{
+ "manifest_version": 2,
+ "name": "Security Awareness",
+ "description": "This extension highlights the latest cyber news and keep you updated and vigilant!",
+ "version": "1",
+ "author": "JJ",
+ 
+ "icons": {
+   "16" : "icon/icon16.png",
+   "48" : "icon/icon48.png",
+   "128" : "icon/icon128.png"
+},
+
+"browser_action": {
+    "default_icon": "icon/icon48.png",
+    "default_popup": "popup.html",
+    "default_title": "Show latest cyber news!"
+
+  },
+
+"chrome_url_overrides" : {
+  "newtab": "newtab.html"
+},
+ "permissions": [
+   "activeTab",
+   "http://*/",
+   "https://*/*",
+   "<all_urls>",
+   "tabs",
+   "contextMenus",
+   "storage"
+
+
+  ],
+  
+"background":{
+    "scripts": ["js/background.js"],
+    "persistent": false
+    }
+}

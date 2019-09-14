@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+	<title>New Tab</title>
+	<script src = "js/jquery-3.4.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+
+	<script src="js/displayNews.js"></script>
+  </head>
+  <body>
+	<h1 align="center" id="cybernews">Your daily source of the latest Cyber News</h1>
+	<div class="container">
+		<form>
+			<div class="input-field">
+				<i class="material-icons prefix"></i>
+				<input type="text" id="searchquery">
+				<label>Search for the latest news!</label>
+			</div>
+			
+			<div class="row">
+			   <input type="submit" id="searchbtn" class="btn col m2 s12" value="search">
+			   <input type="reset" id="searchbtn" class="btn col m2 s12 red right" value="clear"  style="margin-top:3px;">
+			</div>
+			
+		</form>
+
+
+			<div id="loader">
+					<div class="progress">
+					  <div class="indeterminate"></div>
+					</div>
+				  </div>
+				  
+				  <div class="row">
+					 <div id="newsResults"></div>
+				  </div>
+		
+		 </div>
+	  
+
+  
+	<style>
+	
+	#cyberNews , #loader{
+	display: none;
+	}
+	
+	</style>
+	
+	<!--
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+	<p id="demo"></p>
+	-->
+	
+	
+  </body>
+</html>

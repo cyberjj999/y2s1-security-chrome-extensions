@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Malicious Link Checker
+        </title>
+        <script src = "js/jquery-3.4.1.min.js"></script>    
+         <!-- <script src="materialize.min.js"></script> -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!-- For the whole UI positioning+ loader buffering -->
+        <link rel="stylesheet" href='css/myStyle.css'>
+        <!--<script src = "anchor.min.js"></script> -->
+        <script src="js/popup.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+        <script src = 'js/jquery-ui.min.js'></script>
+        <!-- For the custom alert box -->
+        <!-- <script src="anchormeCompilation.js"></script> -->
+       
+      <!-- <script src="contentscript.js"></script> -->
+       
+    </head>
+
+    <body>
+        <h2>MALICIOUS LINK DETECTOR</h2>
+        <div class='myDiv' id='firstDiv'>
+            <div class="tooltip">Enter URL to check:
+                <span class="tooltiptext">The extension will check if the input URL is safe or malicious</span>
+              </div>
+        <input type="text" id="valueOfCheck"></input> 
+        <button id='checkURL'>Check</button>
+        <div id="loader"  class='myDiv' style="display:none;">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+          </div> 
+        </div>
+        <div id='outputDiv'>
+          <img id='outputImage'/>
+          <br>
+          <span id='output'></span>
+        </div> 
+        <span id='dialog' title="Malicious Link Detector"></span> 
+          
+        
+        <hr>        
+        <div class='myDiv' id='secondDiv'>
+            <div class="tooltip">'Do not disturb' List
+                <span class="tooltiptext">The extension will not perform any checks on URLs in this list during navigation!</span>
+              </div>
+        <span id='dialog2' title="Malicious Link Detector!"></span> 
+        <input type="text" id='valueOfAdd'></input> 
+        <button id='addToList'>Add</button>
+        </div>
+     
+        
+
+        <style>
+        #outputImage {
+          display:none;
+          width:30px;
+          height:30px;
+        }
+        </style>
+    </body>
+</html>

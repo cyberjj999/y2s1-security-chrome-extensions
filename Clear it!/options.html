@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Clean It!
+        </title>
+        <body>
+                <script src="js/jquery-3.4.1.min.js"> </script>
+                <script src="js/modal.js"></script>
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+                <script src = 'js/jquery-ui.min.js'></script>
+              
+                <link rel="stylesheet" type="text/css" href="css/modal.css">
+
+
+            <div class ="form-container">
+            <div id='header'>Select option</div>
+            <img src='UI-Images/1hour.png' id='1hour'>
+            <img src='UI-Images/1day.png' id='1day'/>
+            <img src='UI-Images/1week.png' id='1week'/>
+            <!-- <a href='#' id='showConfirm'>Show Confirm</a> -->
+            <div id='dialog' title="Clean It!">Are you sure?</div> 
+            <!-- <input type="number" name="hours" placeholder="Hours of data you wish to clear"> -->
+            
+            <!-- <input type="radio" name="gender" value="1h" id='1hour' checked="checked"> 1 Hour<br>
+            <input type="radio" name="gender" value="1d" id='1day'> 1 Day<br>
+            <input type="radio" name="gender" value="1w" id='1week'> 1 Week<br> -->
+            <!-- Number of hours : <input type="number" name="hours"> -->
+            <br>
+            <br> Number of hours : <input type="number" name="hours" id='userInput' placeholder="Enter -1 to clear all history" max="999">
+            <br> <br>
+             <div id='buttonHolder'>
+            
+            <button type="button" id='Clear' class='btn'>Clear</button>
+            <button type="button" id='Cancel' class="btn cancel">Cancel</button></div>
+            
+        </div>
+        </body>
+    </head>
+</html>
