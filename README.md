@@ -1,7 +1,5 @@
 # security-chrome-extensions
-**This Project Was Featured in NYP Open House**
-
-**Awarded Distinction Grade for this Project**
+**This Project Was Featured in NYP Open House // Awarded Distinction Grade for this Project**
 
 Year 2 Sem 1 Semestral Project in Nanyang Polytechnic- Network Security & Project (ITP291)
 
