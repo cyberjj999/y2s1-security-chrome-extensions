@@ -1,5 +1,5 @@
 # security-chrome-extensions
-<This Project Was Featured in NYP Open House>
+[This Project Was Featured in NYP Open House]
 Year 2 Sem 1 Semestral Project in Nanyang Polytechnic- Network Security & Project (ITP291)
 
 Clean It - Chrome Extension to allow cleaning of browsing history (Cookies,cache etc) with simple UI and a click of an button	
